@@ -27,6 +27,18 @@
                     <li><a href="">contact</a></li>
                   </ul>
                 </nav>
+
+
+                <!--  -->
+                 <ul id="slide-out" class="side-nav">
+                  <li><a href=""><span class="menu-featured">home</span></a></li>
+                  <li><a href="">about</a></li>
+                  <li><a href="">blog</a></li>
+                  <li><a href="">contact</a></li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse"><img src="images/mobile/mobile-menu.png" alt=""> </a>
+                      
+                <!--  -->
               </div>
             </div>
           </header>
@@ -36,10 +48,8 @@
               <div class="container">
                 <div class="row">
                   <figure class="banner-image col s12">
-                    <div class="banner-floating">
-                      <img src="images/bg-home.jpg" alt="Sobremesa Freeze Delight">
+                       <img class="responsive-img" src="images/bg-home.jpg" alt="Sobremesa Freeze Delight"> 
                       <!-- <a class="icon-banner" href="">Freeze Delight</a> -->
-                    </div>
                   </figure>
                 </div>
               </div>
@@ -67,27 +77,48 @@
 
             <section class="products-items">
               <div class="container">
-                div 
+                <article class="items-list">
+                  <div class="row">
+                    <ul>
+                      <li class="col s12 m3"><a href="" class="story"></a><h1>Our Story</h1></li>
+                      <li class="col s12 m3"><a href="" class="flavors"></a><h1>Flavors</h1></li>
+                      <li class="col s12 m3"><a href="" class="product"></a><h1>Product</h1></li>
+                      <li class="col s12 m3"><a href="" class="location"></a><h1>Our Location</h1></li>
+                    </ul>
+                  </div>
+                </article>
               </div>
               
             </section>
           </main>
 
-          <footer>
-            <section class="footer-principal">
+           <footer>
+            <section class="footer-principal valign-wrapper">
               <div class="container">
-                <p>Facebook</p>
-                <p>Twitter</p>
-                <p>Google</p>
+                <div class="row center-align">
+                  <a class="facebook" href="">Facebook</a>
+                  <a class="twitter" href="">Twitter</a>
+                  <a class="google" href="">Google</a>
+                  <a class="pinterest" href="">Pinterest</a>
+                  <p class="copy-rights">&copy; 2013 Freeze. All Rights Reserved</p>
+                </div>
               </div>
-              
             </section>
-          </footer>
+          </footer> 
         </div>
       
 
 
       <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="materialize/js/materialize.js"></script>
+      <script>
+        $('.button-collapse').sideNav({
+          menuWidth: 300, // Default is 300
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true // Choose whether you can drag to open on touch screens,
+        }
+      );
+      </script>
     </body>
   </html>

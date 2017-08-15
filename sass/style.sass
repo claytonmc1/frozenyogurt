@@ -19,6 +19,7 @@ body
     background: #eae7e8
     margin: 0
     padding: 0
+    height: 100%
 
 .wrapper
     width: 100%
@@ -57,22 +58,25 @@ nav.menu
 .menu-featured
     color: #bf4268
 
+.button-collapse
+    display: none
+
 .banner
-    width: 100%
-    height: 660px
-    background: #fff
-
-
+    background: #f8f8f8
+	
 
 .banner-image
     width: 100%
+    height: 100%
 
 .banner-floating
     margin: 0 auto
-    max-width: 960px
     min-height: 470px
     padding: 0
     position: relative
+    // background-image: url('../images/bg-home.jpg')
+    // background-size: cover
+    // background-position: center	
 
 .banner-floating img
     max-width: 100%
@@ -99,7 +103,7 @@ nav.menu
 
 .product-featured
     width: 100%
-    min-height: 260px
+    height: 100%
     background: #eae7e8
 
 .product-title h1
@@ -122,20 +126,88 @@ nav.menu
     display: inline-block
     min-width: 100%
 
-
-
 .products-items
     width: 100%
-    height: 160px
+    height: 100%
     background: #c8c10d
+    margin-top: -24px
+
+.items-list
+    width: 100%
+
+.items-list ul li
+    float: left
+    width: 22.91%  /* 220px */
+    margin-top: 20px
+
+.items-list ul li h1
+    font-family: 'Roboto Regular'
+    font-size: 2.0em
+    color: #fff
+    text-transform: uppercase
+    text-align: center
+
+.items-list ul li a
+    background: url('../images/icons.png') no-repeat
+    display: block
+    height: 44px
+    margin: 0 auto 22px
+    padding: 0
+    width: 80px
+
+.items-list ul li a.product
+    background-position: 0 -372px
+
+.items-list ul li a.story
+    background-position: 0 -418px
+
+.items-list ul li a.flavors
+    background-position: 0 -281px
+
+.items-list ul li a.location
+    background-position: 0 -326px
 
 .footer-principal
     width: 100%
     height: 200px
     background: #cb3362
+    
+.footer-principal a
+    background: url('../images/icons.png') no-repeat
+    display: inline-block
+    width: 50px
+    height: 32px
+    text-indent: -99999px
+    margin: 0 15px
 
+.footer-principal a.facebook
+    background-position: 0 0
+
+.footer-principal a.twitter
+    background-position: 0 -96px
+
+.footer-principal a.google
+    background-position: 0 -32px
+
+.footer-principal a.pinterest
+    background-position: 0 -64px
+
+.copy-rights
+    font-size: 1.2em
+    color: #fff
+    margin: 25px
 
 
 @media (max-width: 600px)
     .product-featured
         min-height: 100%
+
+    .products-items
+        min-height: 100%
+
+    .menu
+        display: none
+
+    .button-collapse
+        display: block
+        text-align: right
