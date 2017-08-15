@@ -9,6 +9,9 @@ a {
 ul {
   list-style: none; }
 
+figure {
+  margin: 0; }
+
 html,
 body {
   font-family: Roboto;
@@ -96,6 +99,26 @@ nav.menu {
   min-height: 260px;
   background: #eae7e8; }
 
+.product-title h1 {
+  font-family: 'Roboto Medium';
+  font-weight: bold;
+  font-size: 3.0em;
+  color: #e32a62; }
+
+.product-title h2 {
+  font-family: 'Roboto Medium';
+  font-size: 1.8em;
+  color: #7a6666;
+  text-transform: uppercase; }
+
+.product-text {
+  font-size: 1.4em;
+  color: #7a6666; }
+
+.product-image img {
+  display: inline-block;
+  min-width: 100%; }
+
 .products-items {
   width: 100%;
   height: 160px;
@@ -105,3 +128,7 @@ nav.menu {
   width: 100%;
   height: 200px;
   background: #cb3362; }
+
+@media (max-width: 600px) {
+  .product-featured {
+    min-height: 100%; } }
